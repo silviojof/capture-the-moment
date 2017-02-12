@@ -1,0 +1,2 @@
+[03-Feb-2017 18:24:29 America/Chicago] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'silviojo_w8user'@'localhost' to database 'week08_db' in /home/silviojoliveira/public_html/capturethemoments/testimonials.php on line 45
+[03-Feb-2017 18:24:29 America/Chicago] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/silviojoliveira/public_html/capturethemoments/testimonials.php on line 47

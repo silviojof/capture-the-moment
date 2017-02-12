@@ -1,0 +1,74 @@
+.about-wrapper {
+    padding: 5rem 0;
+}
+
+.about-banner-wrapper {
+    padding: 5rem 0 6rem 0;
+    background-image: url('../img/about-bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.about-banner-top {
+    text-align: center;
+    h2 {
+        color: $light-salmon;
+    }
+    h6 {
+        font-family: Raleway;
+        font-weight: 300;
+        color: $white;
+    }
+    
+}
+
+.about-info {
+    padding-top: 1rem;
+    text-align: right;
+}
+
+.about-collaborate {
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+.about-img {
+    width: 11rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 4rem;
+    display: inline-block;
+}
+
+.about-icons {
+    float: right;
+    .social-icons {
+        li {
+            margin: 0 0 0 1rem;
+        }
+    }
+    @media screen and (max-width:$tablet-min) {
+        float: left;
+        .social-icons {
+            li {
+                margin: 0 1rem 0 0;
+            }
+        }
+    }
+}
+
+.about-main {
+    p {
+        line-height: 2.1;
+    }
+    @media screen and (min-width:$tablet-min) {
+        padding-left: 4rem;
+        padding-top: 1rem;
+    }
+    blockquote {
+        padding-left: 1rem;
+        border-left: 0.4rem solid $dark-salmon;
+        font-style: italic;
+    }
+}

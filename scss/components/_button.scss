@@ -1,0 +1,107 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+    .btn-small {
+        display: inline-table;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.7rem 2.5rem;
+        background-color: #fff;
+        border-radius: 0.2rem;
+        margin-top: 2rem;
+        color: $dark-salmon;
+        transition: all 0.3s ease-in-out 0.1s;
+        i {
+            padding-left: 1rem;
+        }
+    }
+
+    .btn-no-bg {
+        display: inline-block;
+        text-align: center;
+        background-color: transparent;
+        margin: 1rem auto;
+        font-weight: 800;
+        color: $dark-salmon;
+        transition: all 0.3s ease-in-out 0.1s;
+        i {
+            padding-left: 1rem;
+        }
+        &:hover {
+            cursor: pointer;
+            font-weight: 800;
+            color: $btn-color;
+        }
+    }
+    
+    .btn-container {
+    display: block;
+    margin: 0; padding: 0;
+    list-style-type: none;
+    li:first-child {
+        margin-bottom: 1rem;
+    }
+    a {
+        display: flex;
+        border-radius: 0.2rem;
+        color: $dark-salmon;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: $white;
+        transition: all 0.3s ease-in-out 0.1s;
+        &:hover {
+            cursor: pointer;
+            text-decoration: none;
+            background-color: $light-salmon;
+            box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+        }
+        
+    }
+}
+
+.btn-signup {
+    display: inline-block;
+    background-color: $grey;
+    color: $white;
+    padding: 0.8rem 2.2rem;
+    border-radius: 0.2rem;
+    transition: all 0.3s ease-in-out 0.1s;
+    &:hover {
+        cursor: pointer;
+        text-decoration: none;
+        background-color: $grey;
+        box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+    }
+    i {
+        margin-left: 1.5rem;
+    }
+}
+
+.bar {
+    border: none;
+    height: 3px;
+    width: 20px;
+    background-color: $light-salmon;
+    display: inline-block;
+    margin: 0 0 0 0.2rem;
+}
+
+.slider-btn {
+    display: inline-block;
+    background-color: $grey;
+    color: $white;
+    padding: 0.6rem 1.8rem;
+    border-radius: 0.2rem;
+    transition: all 0.3s ease-in-out 0.1s;
+    &:hover {
+        cursor: pointer;
+        text-decoration: none;
+        background-color: $grey;
+        box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+    }
+    i {
+        margin-left: 1.5rem;
+    }
+}

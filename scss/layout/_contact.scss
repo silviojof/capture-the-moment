@@ -1,0 +1,65 @@
+.gallery-contact-wrapper {
+    background-color: $dark-salmon;
+    padding: 6rem 0;
+}
+
+.contact-form-flex {
+    display: flex;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    color: $light-salmon;
+    label:first-child {
+        
+        @media screen and (min-width: 65.56rem) {
+            margin-right: 1rem;
+        }
+        
+        
+    }
+    .label-container {
+        flex-grow: 1;
+    }
+    
+    .label-container p {
+        color: $light-salmon;
+    }
+    
+    @media screen and (max-width: 40.68rem) {
+            flex-direction: column;
+        }
+        input[type="date"] {
+            height: 2.7rem;
+        }
+}
+
+.contact-form {
+    
+    input[type="date"] {
+        padding: 0.5rem 0.8rem;
+    }
+    input[type="tel"] {
+        padding: 0.43rem 0.8rem;
+    }
+}
+
+.contact-text {
+    h2 {
+        color: $light-salmon;
+    }
+    .bar {
+        background-color: $salmon;
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.9;
+        color: $white;
+        font-weight: 300
+    }
+    
+    p, h2 {
+        max-width: 30rem;
+    }
+    @media screen and (max-width: $mobile-max) {
+        margin-bottom: 3rem;
+    }
+}

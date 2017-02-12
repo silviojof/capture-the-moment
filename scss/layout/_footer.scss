@@ -1,0 +1,159 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.social-icons {
+    margin: 0; padding: 0;
+    list-style-type: none;
+    li {
+        float: left;
+        margin-right: 0.6rem;
+        
+        a {
+            display: flex;
+            width: 2.2rem;
+            height: 2.2rem;
+            align-items: center;
+            justify-content: center;
+            border: 0.1rem solid $dark-grey;
+            border-radius: 50%;
+            color: $dark-grey;
+            &:hover {
+                text-decoration: none;
+                color: $light-grey;
+                background-color: $dark-grey;
+            }
+        }
+    }
+}
+
+.social-icons-f {
+    margin: 0; padding: 0;
+    list-style-type: none;
+    li {
+        float: right;
+        margin-right: 0.6rem;
+        
+        a {
+            display: flex;
+            width: 2.2rem;
+            height: 2.2rem;
+            align-items: center;
+            justify-content: center;
+            border: 0.1rem solid $dark-grey;
+            border-radius: 50%;
+            color: $dark-grey;
+            &:hover {
+                text-decoration: none;
+                color: $light-grey;
+                background-color: $dark-grey;
+            }
+        }
+    }
+}
+
+.sub-footer {
+    padding: 2rem 0 0 0;
+    margin-top: 2rem;
+    border-top: 1px solid $grey;
+    nav {
+        float: left;
+    }
+    @media screen and (max-width: $tablet-min) {
+        nav {
+            float: left;
+        }
+        
+    }
+}
+
+.footer-legal {
+    margin: 0; padding: 0;
+    list-style-type: none;
+    text-align: right;
+    li {
+        display: inline-block;
+    }
+    @media screen and (max-width: $tablet-min) {
+       text-align: left;
+    }
+}
+
+.footer-wrapper {
+    padding: 5rem 0 3rem;
+    @media screen and (max-width: $tablet-min) {
+        padding: 5rem 0 1.5rem;
+    }
+}
+
+.footer-info {
+    margin-bottom: 3rem;
+    h4 {
+        color: $dark-salmon;
+    }
+    @media screen and (min-width: $desktop-min) {
+        &:not(:first-child) {
+            padding-left: 4rem;
+        }
+    }
+}
+
+.footer-menu {
+    margin: 0; padding: 0;
+    list-style-type: none;
+}
+
+.contact-info {
+        padding: 0; margin: 0;
+        list-style-type: none;
+        li {
+            position: relative;
+        }
+        i {
+            display: block;
+            position: absolute;
+            top: 0.6rem;
+            left: -0.1rem;
+            color: $dark-salmon;
+        }
+        span {
+            display: inline-block;
+            padding: 0 0 0 2rem;
+            vertical-align: text-top;
+        }
+    }
+
+.footer-form-box {
+    display: flex;
+    align-items: stretch;
+    height: 2.4rem;
+    input {
+        flex-grow: 2;
+        border: 1px solid $dark-grey;
+        border-radius: 0.2rem 0 0 0.2rem;
+        background-color: transparent;
+        padding-left: 1rem;
+        font-size: 0.8rem;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    button {
+        border-radius: 0;
+        width: 3rem;
+        background-color: $dark-grey;
+        border: 2px solid $dark-grey;
+        border-radius: 0 0.2rem 0.2rem 0;
+        border-left: none;
+        color: $bg-color;
+        &:hover {
+            background-color: transparent;
+            color: $dark-grey;
+        }
+        i{
+            line-height: 2;
+            font-size: 1rem;
+        }
+    }
+}

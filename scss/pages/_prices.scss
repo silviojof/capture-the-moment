@@ -1,0 +1,45 @@
+.price-wrapper {
+    background-color: $light-salmon;
+    padding: 6rem 0 4rem 0;
+    margin-top: 6rem;
+}
+
+.price-box {
+    @media screen and (min-width: $desktop-min) {
+            &:first-child { padding: 0 1.2rem 0 0;}
+            &:nth-child(2) {padding: 0 0.6rem 0 0.6rem;}
+            &:last-child {padding: 0 0 0 1.2rem;}
+        }
+}
+
+.price {
+    background-color: #fff;
+    margin: 0; padding: 0;
+    margin-bottom: 3rem;
+    list-style-type: none;
+    text-align: center;
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+        max-width: 40rem;
+        margin: 0 auto 3rem;
+    }
+
+    
+    &:hover {
+        box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+    }
+    .grey {
+        background-color: $light-grey;
+    }
+    li {
+        margin: 0;
+        padding: 1rem;
+        display: block;
+        border-bottom: 1px solid $light-grey;
+        &:first-child {
+            background-color: $dark-salmon;
+            color: $light-salmon;
+            font-weight: 700;
+            font-size: 1.4rem;
+        }
+    }
+}

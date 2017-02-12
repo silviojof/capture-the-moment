@@ -1,0 +1,147 @@
+.testimonial-wrapper {
+    margin: 5rem 0;
+}
+
+.testimonial-box {
+    text-align: center;
+    height: 27rem;
+    margin-bottom: 2rem;
+    @media screen and (max-width: $tablet-min)  {
+        margin-bottom: 2rem;
+    }
+}
+
+.testimonial-img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+}
+
+.testimonial-text {
+    max-width: 12rem;
+    @media screen and (min-width: 56rem)  {
+        max-width: 15rem;
+    }
+    
+    @media screen and (max-width: $tablet-min)  {
+        max-width: 17rem;
+    }
+    margin: 2rem auto;
+    p {
+        margin: 0;
+        color: $grey;
+    }
+    h2 {
+        color: $dark-salmon;
+    }
+    hr {
+       width: 2.5rem;
+       height: 0.1rem;
+       border: none;
+       background-color: $salmon;
+       margin: 1rem auto;
+    }
+    .testimonial-text-details {
+        text-transform: capitalize;
+        font-size: 0.8rem;
+        span:first-child {
+            font-weight: 600;
+            text-transform: capitalize;
+            color: $dark-salmon;
+        }
+    }
+    .testimonial-text-footer {
+        font-size: 0.7rem;
+        color: $light-salmon;
+    }
+}
+
+.form-wrapper {
+    background-color: $dark-salmon;
+    padding: 4rem 0;
+}
+
+.feedback-box {
+    p {
+        font-size: 1rem;
+        line-height: 1.9;
+        color: $white;
+    }
+    h2, h4, a {
+        color: $light-salmon;
+    }
+    .social-icons {
+        a {
+           color: $light-salmon;
+           border-color: $light-salmon;
+        }
+    }
+    @media screen and (max-width: $tablet-min)  {
+        padding: 2rem;
+    }
+    @media screen and (min-width: $tablet-max)  {
+        padding: 0 2rem;
+    }
+    
+}
+
+.form-box {
+    padding: 2rem;
+}
+
+.label-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    &#gender {
+        flex-direction: row;
+        align-items: center;
+        div {
+            display: flex;
+            align-items: center;
+        }
+        p {
+            margin-right: 2rem;
+            font-weight: 500;
+        }
+    }
+    
+    input[type="radio"] {
+        margin: -0.1rem 2rem 0 0.3rem;
+    }
+    
+    p {
+        font-size: 0.9rem;
+        margin: 0 1rem 0 0;
+        text-transform: capitalize;
+        font-weight: 500;
+        color: $light-salmon
+    }
+    
+    input[type="text"] {
+        flex-grow: 2;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    textarea {
+        flex-grow: 2;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
+        height: 10rem;
+    }
+    
+}
+
+.label-secondary {
+    font-size: 0.9rem;
+    color: $white;
+}
